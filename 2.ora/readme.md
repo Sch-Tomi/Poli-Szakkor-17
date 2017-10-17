@@ -3,7 +3,7 @@
 Elágazások, Logikai operátorok
 
 ## Prezentáció
-https://slides.com/pingvinbetyar/poli-2/live#/
+https://slides.com/sch-tomi/poli-2/live#/
 
 ## Segítségek
 https://www.tutorialspoint.com/python3/python_decision_making.htm
