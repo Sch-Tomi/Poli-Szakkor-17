@@ -32,7 +32,7 @@ A müvelet csak 4 fajta lehet +,-,*,/
 
 Ha mást kapunk akkor hiba üzenet...
 
-Vajon mire lehet használni az itt található dolgokat ? ;)
+Vajon mire lehet használni az itt található dolgokat ? :smile:
 https://stackoverflow.com/questions/11251709/check-if-item-is-in-an-array
 
 ### 2.0 verzió
@@ -55,18 +55,20 @@ Ha muvelet vagy a második szám "C" akkor töröljük mindkékt változót. Eze
 Tegyük átláthatóbbá a programot
 
 
+6 <br />
+\\  <br />
+2 <br />
+\--- <br />
 3
-\+
-4
-\---
-7
+<br />
+<br />
 
+3 <br />
+\+ <br />
+2 <br />
+\--- <br />
+5
 
-7
-\-
-4
-\--
-3
 
 ### Bónuszok
 
