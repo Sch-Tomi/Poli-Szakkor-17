@@ -3,7 +3,7 @@
 
 import unittest
 from unittest.mock import patch
-from tesztverseny_testable import *
+from tesztverseny import *
 
 
 class TesztversenyTestCase(unittest.TestCase):
