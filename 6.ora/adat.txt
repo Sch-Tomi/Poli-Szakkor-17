@@ -1,0 +1,3 @@
+almafa;fa;szép
+körtefa;fa;nem szép
+pálinkafa;fa;hasznos
