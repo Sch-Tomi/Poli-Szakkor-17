@@ -43,10 +43,21 @@ def feladat4(megoldas, valasz):
     print(megoldas, "    ","(...)")
     print(*pontozas,sep='', end='')
     print("   ","(---)")
-
+    
+def feladat5(megoldas, valasz):
+    print("5. Feladat: )
+    asd = 0
+    sorszam = int.input("a feladat sorszáma: )
+    for szemely_adat in valaszok():
+      if megoldas[sorszam-1] == szemely_adat[1][sorszam-1]:
+        helyes_tippek = helyes_tippek +1
+    
+    szazalek = round((helyes_tippek / len(valaszok) * 100),2)
+    print(szazalek)
 
 if __name__ == '__main__':
     valaszok, megoldas = feladat1()
     feladat2(valaszok)
     ell_valasz = feladat3(valaszok)
     feladat4(megoldas, ell_valasz)
+    feladat5()
