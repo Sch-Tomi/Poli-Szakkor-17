@@ -5,11 +5,6 @@ import random
 
 
 class Ability:
-
-    strength = None
-    agility = None
-    intelligence = None
-
     def __init__(self, strength, agility, intelligence):
         self.strength = strength
         self.agility = agility
@@ -17,13 +12,6 @@ class Ability:
 
 
 class Warrior:
-
-    name = None
-    heatlh = None
-    ability = None
-    weapon = None
-    shield = None
-
     def __init__(self, name, heatlh, ability, weapon, shield):
         self.name = name
         self.heatlh = heatlh
@@ -48,9 +36,6 @@ class Warrior:
 
 
 class Weapon:
-
-    hitPoint = None
-
     def __init__(self, hitPoint):
         self.hitPoint = hitPoint
 
@@ -87,9 +72,6 @@ class WarHammer(Weapon):
 
 
 class Shield:
-
-    chance = None
-
     def __init__(self, chance_to_block):
         self.chance = chance_to_block
 
