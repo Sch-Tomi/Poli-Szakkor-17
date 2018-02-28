@@ -57,38 +57,42 @@ cecho red "---------------------------------------------------------------------
 -----------------------------------------------------------------------------"
 
 echo '=> Update repository information'
-apt-get update -qq | echo -ne
+apt-get update -qq
+clear
 echo '=> Performe system upgrade'
-apt-get dist-upgrade -y | echo -ne
+apt-get dist-upgrade -y
 echo 'Kész'
 
+clear
 cecho red "-----------------------------------------------------------------------------
 => Telepítéshez szükséges eszközök telepítése
 -----------------------------------------------------------------------------"
-
-apt-get install -y apt-transport-https dirmngr software-properties-common | echo -ne
+apt-get install -y apt-transport-https dirmngr software-properties-common 
 echo "Kész"
 
+clear
 cecho red "-----------------------------------------------------------------------------
 => Add PPAs (Personal Package Archives)
 -----------------------------------------------------------------------------"
-
 add-apt-repository -y "deb https://packages.microsoft.com/repos/vscode stable main"
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EB3E94ADBE1229CF
 echo '=> Update repository information'
-apt-get update -qq | echo -ne
+apt-get update -qq
 echo "Kész"
 
-
+clear
 cecho red "-----------------------------------------------------------------------------
 => Install developer packages
 -----------------------------------------------------------------------------"
-apt-get install -y git python3 python3-pip nano code | echo -ne
+apt-get install -y git python3 python3-pip nano code
+pip3 install pygame
 
+clear
 cecho red "-----------------------------------------------------------------------------
 => Fix VS Code
 -----------------------------------------------------------------------------"
 sed -i 's/Icon=code/Icon=\/usr\/share\/pixmaps\/code.png/g' /usr/share/applications/code.desktop
 sed -i 's/New Empty Window/VS Code/g' /usr/share/applications/code.desktop
+echo "Kész"
 
 echo 'Minden kész!'
