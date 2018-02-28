@@ -8,7 +8,7 @@ Azért készült, hogy könnyen és gyorsan újra lehessen telepíteni a pendriv
 cd /tmp && wget https://raw.githubusercontent.com/Sch-Tomi/Poli-Szakkor-17/master/install/poli_install.sh && chmod +x poli_install.sh && ./poli_install.sh
 ```
 
-#Működése:
+# Működése:
 - Frissíti a rendszert
 - Telepíti:
     - git
