@@ -13,11 +13,7 @@
 # [0] - https://gist.github.com/rougeth/8108714
 #
 # Usage:
-#   $ cd /tmp
-#   $ wget http://...
-#   $ chmod +x poli_install.sh
-#   $ ./poli_install.sh
-#
+#   cd /tmp && wget https://raw.githubusercontent.com/Sch-Tomi/Poli-Szakkor-17/master/install/poli_install.sh && chmod +x poli_install.sh && ./poli_install.sh
 #
 
 # https://stackoverflow.com/a/28709668
