@@ -58,6 +58,8 @@ def feladat5(megoldas, valaszok):
 
     print(helyes_tippek, szazalek)
 
+
+
 if __name__ == '__main__':
 
     valaszok, megoldas = feladat1()
