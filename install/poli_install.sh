@@ -60,7 +60,7 @@ echo '=> Update repository information'
 apt-get update -qq
 clear
 echo '=> Performe system upgrade'
-apt-get dist-upgrade -y
+#apt-get dist-upgrade -y
 echo 'Kész'
 
 clear
