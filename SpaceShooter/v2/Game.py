@@ -7,19 +7,23 @@ class Game:
     def __init__(self):
         self.space = Map()
         
-        self.allSprites = pygame.sprite.Group()
-        self.ship = Ship()
-        self.allSprites.add(self.ship)
-
         pygame.init()
         self.window = pygame.display.set_mode((self.space.width, self.space.height))
         pygame.display.set_caption("SpaceShooter")
+
+        self.allSprites = pygame.sprite.Group()
+        self.ship = Ship()
+        self.allSprites.add(self.ship)
+        self.clock = pygame.time.Clock()
+        self.FPS = 60
 
         self.mainLoop()
 
     def mainLoop(self):
         running = True
         while running:
+            
+            self.clock.tick(self.FPS)
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -29,6 +33,9 @@ class Game:
                         self.ship.move("L")
                     if event.key == pygame.K_d:
                         self.ship.move("R")
+                if event.type == pygame.KEYUP:
+                    if event.key == pygame.K_a or event.key == pygame.K_d:
+                        self.ship.stop()
 
             self.allSprites.update()
 
